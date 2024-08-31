@@ -1,0 +1,13 @@
+train: /content/drive/MyDrive/Weccet/train
+val: /content/drive/MyDrive/Weccet/valid
+test: /content/drive/MyDrive/Weccet/test
+
+nc: 12
+names: ['derem', 'fukk', 'junni', 'juroom derem', 'juroom fukk', 'niaar junni', 'niaar teemeer', 'niaari derem', 'niaari fukk', 'nient fukk', 'nient teemeer', 'teemeer']
+
+roboflow:
+  workspace: adams-tra-xbfl0
+  project: weccet
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/adams-tra-xbfl0/weccet/dataset/2
