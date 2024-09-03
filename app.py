@@ -62,11 +62,7 @@ if uploaded_image is not None:
 elif webcam_image is not None:
     st.write("Image captured from webcam.")  # Message de débogage
     image = Image.open(webcam_image).convert("RGB")  # Convertir en RGB
-else:
-    st.write("Using default image.")  # Message de débogage
-    image = Image.open("images/img.jpeg").convert(
-        "RGB"
-    )  # Charger l'image par défaut et convertir en RGB
+
 
 if image is not None:
     st.image(image, caption="Image originale", use_column_width=True)
