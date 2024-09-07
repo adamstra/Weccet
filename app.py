@@ -48,7 +48,7 @@ st.title("WECCET INTERFACE")
 uploaded_image = st.file_uploader("Téléchargez une image", type=["jpg", "png", "jpeg"])
 
 # Option pour capturer une image via webcam
-webcam_image = st.camera_input("Ou capturez une image via votre webcam")
+# webcam_image = st.camera_input("Ou capturez une image via votre webcam")
 
 # Initialiser l'image à None
 image = None
@@ -56,12 +56,7 @@ image = None
 # Si aucune image n'est fournie par l'utilisateur, charger l'image par défaut
 if uploaded_image is not None:
     st.write("Image uploaded.")  # Message de débogage
-    image = Image.open(uploaded_image).convert(
-        "RGB"
-    )  # Convertir en RGB pour assurer la compatibilité
-elif webcam_image is not None:
-    st.write("Image captured from webcam.")  # Message de débogage
-    image = Image.open(webcam_image).convert("RGB")  # Convertir en RGB
+    image = Image.open(uploaded_image).convert("RGB")
 
 
 if image is not None:
